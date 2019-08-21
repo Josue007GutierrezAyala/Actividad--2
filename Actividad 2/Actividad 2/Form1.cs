@@ -16,5 +16,32 @@ namespace Actividad_2
         {
             InitializeComponent();
         }
+
+
+        private void TextNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Textcontraseña_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+            if (textNombre.Text.ToString() == "juancho")
+            {
+                if (textcontraseña.Text.ToString() == "123frijoles")
+                {
+                    MessageBox.Show("inciando sesion");
+                }
+                else
+                    MessageBox.Show("Contraseña incorrecta.");
+            }
+            else
+                MessageBox.Show("Usuario -" + textNombre.Text + "- no encontrado.");
+        }
+
     }
 }
