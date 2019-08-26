@@ -32,7 +32,7 @@ namespace Actividad_2
 
             if (textNombre.Text.ToString() == "juancho")
             {
-                if (textcontraseña.Text.ToString() == "123frijoles")
+                if (textcontraseña.Text.ToString() == "123tamarindo")
                 {
                     MessageBox.Show("inciando sesion");
                 }
@@ -40,8 +40,18 @@ namespace Actividad_2
                     MessageBox.Show("Contraseña incorrecta.");
             }
             else
+            {
                 MessageBox.Show("Usuario -" + textNombre.Text + "- no encontrado.");
+                textNombre.Text = "";
+                textcontraseña.Text = "";
+                textNombre.Focus();
+
+            }
         }
 
+        private void Fuera_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -35,6 +35,7 @@
             this.textcontraseña = new System.Windows.Forms.TextBox();
             this.textNombre = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.Fuera = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbTitulo
@@ -91,13 +92,24 @@
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(575, 160);
+            this.button1.Location = new System.Drawing.Point(492, 170);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 48);
+            this.button1.Size = new System.Drawing.Size(118, 30);
             this.button1.TabIndex = 5;
             this.button1.Text = "GO THERE";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // Fuera
+            // 
+            this.Fuera.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fuera.Location = new System.Drawing.Point(616, 170);
+            this.Fuera.Name = "Fuera";
+            this.Fuera.Size = new System.Drawing.Size(125, 30);
+            this.Fuera.TabIndex = 6;
+            this.Fuera.Text = "SALIR";
+            this.Fuera.UseVisualStyleBackColor = true;
+            this.Fuera.Click += new System.EventHandler(this.Fuera_Click);
             // 
             // Form1
             // 
@@ -107,6 +119,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Fuera);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textNombre);
             this.Controls.Add(this.textcontraseña);
@@ -128,6 +141,7 @@
         private System.Windows.Forms.TextBox textcontraseña;
         private System.Windows.Forms.TextBox textNombre;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Fuera;
     }
 }
 
